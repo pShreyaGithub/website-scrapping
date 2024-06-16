@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@300&display=swap');
+
+body, button, input, select {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: rgb(164, 190, 235);
+  padding: 20px;
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+h2 {
+  font-family: 'Helvetica Light', sans-serif;
+  color: #080101;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#labell {
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid #2d2b2b;
+  color: #050202;
+}
+
+#btn {
+  background-color: #692c32;
+  color: white;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  font-family: 'Helvetica Light', sans-serif;
+  border: 1px solid black;
+}
+
+#Download {
+  margin-left: 510px;
+  color: #080101;
+  font-weight: 600;
+}
+
+.dataTableWrapper {
+  margin-top: 20px;
+  border: 4px solid #050202;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dataTableHeader {
+  font-size: 16px;
+  border-right: 3px solid #070000;
+}
+
+.dataTableRow {
+  min-height: 42px;
+  border: 2px solid dark;
+  background-color: rgb(215, 215, 210);
+}
+
+.dataTableCell {
+  border-right: 1px solid #585757;
+  width: 120px;
+}
+
+#button {
+  background-color: #692c32;
+  color: white;
+  height: 30px;
+  margin: 7px;
+  font-size: 9px;
+  font-family: 'Helvetica Light', sans-serif;
+  border: 1px solid black;
+}
+
+
+@media (max-width: 768px) {
+  .dataTableWrapper {
+    overflow-x: auto;
+  }
+
+  .dataTableHeader,
+  .dataTableCell {
+    min-width: 100px; 
+  }
+
+  .buttonWrapper {
+    flex-direction: column; 
+  }
+
+  #Download {
+    margin-left: 0; 
+  }
+}
+
+
+#delete{
+
+    color: #080101;
+    font-weight: 600;
+}
+
+#tweet{
+    color: #050202;
+    
+}
+#ig{
+    color: #050202;
+}
+#fb{
+    color: #050202;
+}
+#linkedin{
+    color: #050202;
+}
