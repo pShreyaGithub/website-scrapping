@@ -23,7 +23,7 @@ function CombinedPage() {
   const [url, setUrl] = useState("");
 
   const fetchCompanies = async () => {
-    const response = await axios.get("http://localhost:4000/open/api/sites");
+    const response = await axios.get("https://website-scrapping.onrender.com/open/api/sites");
     setCompanies(response.data);
   };
 
@@ -53,7 +53,7 @@ function CombinedPage() {
       const toastId = toast.loading("Deleting data");
       try {
         await axios.post(
-          "http://localhost:4000/open/api/delete_multiple_site/",
+          "https://website-scrapping.onrender.com/open/api/delete_multiple_site/",
           {
             ids: selected,
           }
@@ -78,7 +78,7 @@ function CombinedPage() {
 
   const handleDownloadCSV = async () => {
     const response = await axios.get(
-      "http://localhost:4000/open/api/download_csv",
+      "https://website-scrapping.onrender.com/open/api/download_csv",
       { responseType: "blob" }
     );
     const url = window.URL.createObjectURL(new Blob([response.data]));
@@ -94,7 +94,7 @@ function CombinedPage() {
     try {
       setIsScrappingLoading(true);
       const response = await axios.post(
-        "http://localhost:4000/open/api/scrap_site",
+        "https://website-scrapping.onrender.com/open/api/scrap_site",
         { url }
       );
       if (response.status === 200) {
