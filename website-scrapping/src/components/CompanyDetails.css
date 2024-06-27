@@ -1,0 +1,146 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Helvetica:wght@300&display=swap");
+
+
+body,
+button,
+input,
+select,
+p,
+.typography {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 300;
+}
+
+.upper-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(12, 10, 10, 0.1);
+  background-color: rgb(248, 249, 250);
+  margin-bottom: 20px;
+  border: 2 px solid rgb(64, 60, 60);
+}
+
+.lower-containers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+  border-right: 3px solid #f5f2f2;
+  min-width: 200px;
+  min-height: 525px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+  border: 2 px solid rgb(105, 101, 101);
+  box-shadow: 2px 2px 10px rgba(12, 10, 10, 0.1);
+}
+
+.right-section {
+  flex: 1;
+  padding: 10px;
+  min-height: 396px;
+  display: flex;
+  flex-direction: column;
+  border: 2 px solid rgb(105, 101, 101);
+  box-shadow: 2px 2px 10px rgba(6, 4, 4, 0.1);
+}
+
+.section-title {
+  font-size: 12px;
+  color: #050404;
+  padding: 8px;
+}
+
+.logo {
+  width: 81px;
+  height: 77px;
+  border: 1px solid rgb(231, 226, 226);
+  padding: 3px;
+}
+
+#description {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #0c0000;
+  padding: 8px;
+}
+
+.contact-info-item {
+  font-size: 16px;
+  color: #040000;
+  padding: 8px;
+}
+
+.screenshot {
+  width: 85%;
+  max-width: 600px;
+  margin-top: 2px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 20px 0 rgba(58, 55, 55, 0.25);
+  border: 1px solid rgb(250, 247, 247);
+  height: 332px;
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .upper-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .lower-containers {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    padding: 8px;
+  }
+
+  #description {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .contact-info-item {
+    font-size: 14px;
+  }
+
+  .screenshot {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
+
+
+.section-title,
+#size {
+  font-size: 16px;
+}
+
+#align {
+  font-size: 14px;
+}
+
+#title {
+  font-size: 26px;
+}
+
+#title1 {
+  font-size: 18px;
+}

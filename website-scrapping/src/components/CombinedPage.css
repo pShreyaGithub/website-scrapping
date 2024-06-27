@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@300&display=swap');
+
+body, button, input, select {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: rgb(246, 246, 246);
+  padding: 20px;
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgb(125, 124, 124);
+  margin-bottom: 20px;
+}
+
+.buttonContainer {
+  max-width: 1200px;
+  background-color: rgb(246, 246, 246);
+  padding: 20px;
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgb(125, 124, 124);
+  margin-top: 2px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#labell {
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid #cedde8;
+  color: #050202;
+  height: 11px;
+  width: 533px;
+  flex: 1;
+}
+
+.MuiOutlinedInput-root {
+  &.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: transparent;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border-color: transparent;
+  }
+}
+
+#btn {
+  background-color: #b279eb;
+  color: rgb(54, 29, 67);
+  display: block;
+  margin: 20px auto;
+  width: 287px;
+  font-family: 'Helvetica Light', sans-serif;
+  font-size: 14px;
+}
+
+#Download {
+  margin-left: 74px;
+  color: #3f3b3b;
+}
+
+#select {
+  margin-left: -1028px;
+  color: #3f3b3b;
+  margin-top: -32px;
+}
+
+#delete {
+  color: #3f3b3b;
+  margin-left: -463px;
+}
+
+#tweet,
+#ig,
+#fb,
+#linkedin {
+  color: #908b8b;
+  font-size: 15px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.searchIcon {
+  margin-right: 8px;
+}
+
+.textField {
+  flex: 1;
+}
+
+.inputLabel {
+  margin-right: 10px;
+}
+
+.dataTableWrapper {
+  margin-top: 20px;
+  border: 4px solid #050202;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dataTableHeader {
+  font-size: 16px;
+  border-right: 3px solid #070000;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.dataTableRow {
+  min-height: 42px;
+  border: 2px solid dark;
+  background-color: rgb(215, 215, 210);
+}
+
+.dataTableCell {
+  border-right: 1px solid #585757;
+  width: 120px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .buttonContainer {
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .inputWrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #labell {
+    width: 100%;
+  }
+
+  #btn {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  #Download {
+    margin-left: 0;
+  }
+
+  #select {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #delete {
+    margin-left: 0;
+  }
+
+  .dataTableWrapper {
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+
+  .dataTableHeader,
+  .dataTableCell {
+    min-width: 100px;
+  }
+}
+
+
+
+
+
+
+
+
