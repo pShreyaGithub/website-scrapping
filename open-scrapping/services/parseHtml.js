@@ -35,7 +35,7 @@ nlp.extend((Doc, world) => {
   });
 });
 
-// Function to parse HTML and extract relevant Details
+// Function to parse HTML and extract relevant details
 async function parseHtml(html, url) {
   const $ = cheerio.load(html);
 
