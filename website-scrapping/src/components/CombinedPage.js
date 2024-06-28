@@ -105,33 +105,29 @@ function CombinedPage() {
 
   const columns = [
     {
-      name: "Logo",
-      cell: (row) => (
-        <img src={row.favicon} alt="NA" style={{ width: "20px", height: "auto" }} />
-      ),
-      sortable: true,
-    },
-    {
       name: "COMPANY",
-      selector: (row) => row.companyDetails.name,
-      sortable: true,
       cell: (row) => (
-        <Button
-          id="link"
-          href={`/company/${row._id}`}
-          variant="text"
-          color="primary"
-          size="small"
-        >
-          {row.companyDetails.name}
-        </Button>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img src={row.favicon} alt="NA" style={{ width: "20px", height: "auto", marginRight: "8px" }} />
+          <Button
+            id="link"
+            href={`/company/${row._id}`}
+            variant="text"
+            color="primary"
+            size="small"
+          >
+            {row.companyDetails.name}
+          </Button>
+        </div>
       ),
+      sortable: true,
+      selector: (row) => row.companyDetails.name,
     },
     {
       name: "SOCIAL",
       cell: (row) => (
         <div>
-          {row.companyDetails.social_links.facebook ? (
+          {row.companyDetails.social_links.facebook && (
             <a
               href={row.companyDetails.social_links.facebook}
               target="_blank"
@@ -139,8 +135,8 @@ function CombinedPage() {
             >
               <Facebook id="fb" />
             </a>
-          ) : null}
-          {row.companyDetails.social_links.instagram ? (
+          )}
+          {row.companyDetails.social_links.instagram && (
             <a
               href={row.companyDetails.social_links.instagram}
               target="_blank"
@@ -148,8 +144,8 @@ function CombinedPage() {
             >
               <Instagram id="ig" />
             </a>
-          ) : null}
-          {row.companyDetails.social_links.twitter ? (
+          )}
+          {row.companyDetails.social_links.twitter && (
             <a
               href={row.companyDetails.social_links.twitter}
               target="_blank"
@@ -157,8 +153,8 @@ function CombinedPage() {
             >
               <Twitter id="tweet" />
             </a>
-          ) : null}
-          {row.companyDetails.social_links.linkedin ? (
+          )}
+          {row.companyDetails.social_links.linkedin && (
             <a
               href={row.companyDetails.social_links.linkedin}
               target="_blank"
@@ -166,7 +162,7 @@ function CombinedPage() {
             >
               <LinkedIn id="linkedin" />
             </a>
-          ) : null}
+          )}
         </div>
       ),
       ignoreRowClick: true,
@@ -194,7 +190,7 @@ function CombinedPage() {
       sortable: true,
     },
   ];
-
+  
   const data = companies;
 
   const customStyles = {
@@ -279,7 +275,7 @@ function CombinedPage() {
   return (
     <>
       <Container className="container">
-        <h3>Scrape Website Data</h3>
+        {/* <h3>Scrape Website Data</h3> */}
         <div className="inputWrapper">
           <div className="inputContainer">
             <Search className="searchIcon" />
