@@ -16,7 +16,7 @@ function CompanyDetails() {
     }
     try {
       const response = await axios.get(
-        `http://localhost:4000/open/api/site_details/${id}`
+        `https://website-scrapping.onrender.com/open/api/site_details/${id}`
       );
       setCompany(response.data);
     } catch (err) {
