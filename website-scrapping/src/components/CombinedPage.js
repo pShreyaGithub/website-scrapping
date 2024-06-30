@@ -17,7 +17,7 @@ function CombinedPage() {
   const [url, setUrl] = useState("");
 
   const fetchCompanies = async () => {
-    const response = await axios.get("http://localhost:4000/open/api/sites");
+    const response = await axios.get("https://website-scrapping.onrender.com/open/api/sites");
     setCompanies(response.data);
   };
 
@@ -46,7 +46,7 @@ function CombinedPage() {
     if (selected.length) {
       const toastId = toast.loading("Deleting data");
       try {
-        await axios.post("http://localhost:4000/open/api/delete_multiple_site/", {
+        await axios.post("https://website-scrapping.onrender.com/open/api/delete_multiple_site/", {
           ids: selected,
         });
         toast.update(toastId, {
@@ -68,7 +68,7 @@ function CombinedPage() {
   };
 
   const handleDownloadCSV = async () => {
-    const response = await axios.get("http://localhost:4000/open/api/download_csv", { responseType: "blob" });
+    const response = await axios.get("https://website-scrapping.onrender.com/open/api/download_csv", { responseType: "blob" });
     const url = window.URL.createObjectURL(new Blob([response.data]));
     const link = document.createElement("a");
     link.href = url;
@@ -81,7 +81,7 @@ function CombinedPage() {
     const toastId = toast.loading("Scrapping site");
     try {
       setIsScrappingLoading(true);
-      const response = await axios.post("http://localhost:4000/open/api/scrap_site", { url });
+      const response = await axios.post("https://website-scrapping.onrender.com/open/api/scrap_site", { url });
       if (response.status === 200) {
         toast.update(toastId, {
           render: "Site scrapped successfully",
